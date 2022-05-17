@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./icons/logo.ico">
+    <link rel="stylesheet" href="./styles/reset.css">
+    <link rel="stylesheet" href="jquery-ui-1.12.1/jquery-ui.css">
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./styles/for_form.css">
+    <link rel="stylesheet" href="./styles/fonts.css">
+    <link rel="stylesheet" href="./styles/pre.css">
+    <title>Festive Santa</title>
+</head>
+<body>
+    <div id="hellopreloader">
+
+        <div id="hellopreloader_preload">
+        </div>
+           
+    </div>
+
+    <header >
+        <div class="logo">
+            
+            <img id="logo" alt=""  src="./pictures/logo.svg">  
+            
+        </div>
+
+        <ul>  
+            <li  class="menu_block">галерея</li>
+            <li href="#reviews" class="menu_block">отзывы</li>
+            <li href="#price" class="menu_block">наши цены</li>
+            <li href="#contacts" class="menu_block">наши контакты</li>
+        </ul>
+
+    </header>
+
+    <div id="zvuk" ></div>
+
+    <audio src="./media/music.mp3"  loop autoplay></audio>
+
+    <div id="scrollToTop" ></div>
+
+    <div class="animate ">
+        <h1>Пригласить деда мороза</h1>
+
+        <p>Дед мороз на дом, на корпоратив, в школу, во двор</p>
+
+        <div>
+            <button class="myLinkModal">сделать заказ</button>
+            <button class="myLinkModal2" >заказать звонок</button> 
+
+            <div id="myModal">
+
+                <form action="#" id="first_form">
+
+                    <div class="container">
+                              
+                        <p>Пожалуйста, заполните эту форму, чтобы оформить заказ.</p>
+                              
+                        <hr>
+                                
+                        <div>
+                            <label for="login">Имя</label>
+                            <input type="text" placeholder="Введите имя" id="login" name="login" >
+                               
+                        </div>
+
+                        <div>
+                            <label for="email">Email</label>
+                            <input type="text" placeholder="Введите Email" id="email" name="email" >   
+                        </div>
+
+                        <div>
+                            <label for="telephone">Телефон</label>
+                            <input type="text" placeholder="Введите номер мобильного телефона" id="telephone" name="telephone" >    
+                        </div>
+
+                        <div>
+                            <label for="pojelanie">Пожелания</label>
+                            <input type="text" placeholder="Оставьте пожелания, если они у вас есть" id="pojelanie" name="pojelanie" >
+                        </div>
+                                
+                        <button type="submit" class="registerbtn">Оформить</button>
+                            
+                    </div>
+
+                </form>
+                 
+                <span id="myModal__close" class="close"></span>
+
+            </div>
+
+            <div id="myOverlay">
+            </div>
+           
+            <div id="myModal2">
+                <form action="#" id="two_form">
+                    <div class="container">
+                        <p>Мы можем вам перезвонить, заполните эту форму и наш специалист свяжется с вами</p>
+
+                        <hr>
+
+                        <div>
+                            <label for="login2">Имя</label>
+                            <input type="text" placeholder="Введите имя" id="login2" name="login2" >
+                        </div>
+                       
+                        <div>
+                            <label for="telephone2">Телефон</label>
+                            <input type="text" placeholder="Введите номер мобильного телефона" id="telephone2" name="telephone2" >
+                        </div>
+                        
+                        <button type="submit" class="registerbtn">Отправить</button>
+                    </div>
+                </form>
+
+                <span id="myModal__close2" class="close"></span>
+                
+            </div>
+
+            <div id="myOverlay2">
+            </div>
+
+        </div>  
+
+    </div>
+   
+    <section id="galery" class="galery prokrutka" >
+        <h2>Галерея</h2>
+        <div class="block">
+
+            <div id="right" class="right" onclick="slider1.left();">
+            </div>
+
+            <div   id="slayder">
+            </div>
+             
+            <div class="left " onclick="slider1.right();">
+            </div>               
+
+        </div>
+
+        <button class="myLinkModal3 buttonka" > смотреть мультик </button>
+
+        <div id="myModal3">
+            <div id="multik">
+            </div>
+
+            <img  id="for_play" alt="" src="./icons/play.png" >
+
+            <span id="myModal__close3" class="close">
+            </span>
+        </div>
+
+        <div id="myOverlay3">
+        </div>
+
+    </section>
+
+    <section id="reviews" class="reviews">
+
+        <h2>Отзывы</h2>
+
+        <div>
+            <div class="for_text">
+
+                <p class="name"> Савватеев Игорь
+                </p>
+            
+                <p>
+                    К нам приходил Дед Мороз. 
+                    Актер очень подготовленный. Племяшка немного напугалась, 
+                    но Дед Мороз очень умел завлек ее в игру. Новогоднее 
+                    настроение создали. Молодцы!
+
+                </p>
+            </div>
+
+            <div class="for_text">
+
+                <p class="name"> Николаева Юлия 
+                </p>
+
+                <p>
+                    Спасибо Вам большое. У меня трое детей и я не была уверена,
+                    что можно заинтересовать всех сразу. Я ошибалась. Мои
+                    мальчишки были просто счастливы) Раздали подарки, поиграли,
+                    спели, станцевали. Спасибо Вам за Ваш труд.
+                </p>
+            </div>
+
+            <div class="for_text">
+
+                <p class="name">Гринчик Надежда
+                </p>
+
+                <p>
+                    К нам приходил Дед Мороз. 
+                    Выбрали программу Домашнее новогоднее представление. 
+                    Мы с детьми будили Дед Мороза и  
+                    чинили новогодние часы. Детей было 15 человек 
+                    и каждый из них был задействован. Даже взрослые с интересом 
+                    участвовали. В следующем году пригласим еще.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section id="price" class="price">
+
+        <h2>Цены</h2>
+
+        <div>
+
+            <div class="for_text">
+
+                <p class="name">
+                    20 - 30 дек., 1 янв.
+                </p>
+
+                <p>  
+                    25 минут
+                    игры, забавы,
+                    музыка
+                </p>
+
+                <p class="cash">
+                    60 руб
+                </p>
+
+            </div>
+
+            <div class="for_text">
+
+                <p class="name">
+                    31 дек. до 17.00 
+                </p>
+
+                <p>  
+                    25 минут
+                    игры, забавы,
+                    музыка
+                </p>
+
+                <p class="cash">
+                    85 руб
+                </p>
+            </div>
+
+            <div class="for_text">
+
+                <p class="name">
+                    31 дек. 18.00-22.30 
+                </p>
+
+                <p>   
+                    25 минут
+                    игры, забавы,
+                    музыка
+                </p>
+
+                <p class="cash">
+                    120 руб
+                </p>
+
+            </div>
+
+            <div class="for_text">
+
+                <p class="name">
+                    31 дек. с 23.00 
+                </p>
+
+                <p>  
+                    25 минут
+                    игры, забавы,
+                    музыка
+                </p>
+
+                <p class="cash">
+                    170 руб
+                </p>
+            
+            </div>
+        </div>
+    </section>
+   
+   <footer id="contacts">
+
+        <div class="for_ikonki">
+
+            <a href="https://youtube.com" title="YouTube" target="_blank" class="youtube iconki">
+            </a>
+
+            <a href="https://www.instagram.com" title="Instagram" target="_blank"  class="inst iconki">
+            </a>
+
+            <a href="https://vk.com" title="VK" target="_blank"  class="vk iconki">
+            </a>
+
+            <a href="https://desktop.telegram.org" title="Telegram" target="_blank"  class="telega iconki">
+            </a>
+
+        </div>
+
+        <div class="phone">
+            <p>+375298088759
+            </p>
+        </div>
+
+   </footer>
+   <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+   <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+   <script src="js/js.js"></script>
+   <script src="js/jq.js"></script>
+</body>
+</html>
